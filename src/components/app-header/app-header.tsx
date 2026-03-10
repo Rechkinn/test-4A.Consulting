@@ -8,7 +8,7 @@ const AppHeader: FC = () => {
   const { isRunning } = useSelector((store) => store.timer);
   const expiryTime = useMemo(() => {
     const time = new Date();
-    time.setSeconds(time.getSeconds() + 115);
+    time.setSeconds(time.getSeconds() + 120);
     return time;
   }, []);
 
