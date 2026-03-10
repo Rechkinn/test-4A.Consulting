@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type FC } from "react";
+import { useEffect, useState, type FC } from "react";
 import styles from "./tariff.module.css";
 import Discount from "../discount/discount";
 import type { TTariffProps } from "../../utils/types";

@@ -11,13 +11,12 @@ import { Provider } from "react-redux";
 
 export const store = configureStore({
   reducer: rootReducer,
-  devTools: process.env.NODE_ENV !== "production",
 });
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Provider store={store}>
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/test-4A.Consulting">
         <App />
       </BrowserRouter>
     </Provider>
