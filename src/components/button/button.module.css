@@ -1,0 +1,36 @@
+.button {
+  padding: 20px 137px;
+  background-color: #fdb056;
+  color: black;
+  border-radius: 20px;
+  border: 0;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Montserrat;
+}
+
+@media (max-width: 1255px) {
+  .button {
+    padding: 20px 20px;
+    font-size: 18px;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking {
+  animation-name: blinking;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

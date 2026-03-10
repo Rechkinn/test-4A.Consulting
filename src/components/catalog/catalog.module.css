@@ -1,0 +1,172 @@
+.container {
+  padding-top: 50px;
+  padding-bottom: 150px;
+  padding-left: var(--left-right-padding);
+  padding-right: var(--left-right-padding);
+  max-width: var(--max-width);
+  font-family: Montserrat;
+  margin: auto;
+}
+
+@media (max-width: 1255px) {
+  .container {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+.header {
+  margin-bottom: 110px;
+  font-weight: 700;
+  font-size: 40px;
+}
+@media (max-width: 1255px) {
+  .header {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .header {
+    font-size: 22px;
+  }
+}
+
+.highlighting {
+  color: var(--color-orange);
+}
+
+.mainContent {
+  margin-bottom: 66px;
+  display: flex;
+  gap: 87px;
+}
+
+@media (max-width: 1255px) {
+  .mainContent {
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+}
+
+.imageMan {
+  max-width: 381px;
+}
+@media (max-width: 1255px) {
+  .imageMan {
+    width: 124px;
+    height: 250px;
+  }
+}
+
+.containerTariffWithRadioButton {
+  margin-top: 14px;
+  margin-bottom: 20px;
+  gap: 14px;
+
+  display: grid;
+  --count-columns: 3;
+
+  grid-template-columns: repeat(var(--count-columns), 1fr);
+  grid-template-rows: 1fr;
+}
+
+@media (max-width: 1255px) {
+  .containerTariffWithRadioButton {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.containerTariffWithRadioButton > :first-child {
+  grid-column: span var(--count-columns);
+}
+
+.informationBoard {
+  margin-bottom: 30px;
+  max-width: 499px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Montserrat;
+
+  display: flex;
+  align-items: start;
+  gap: 8px;
+
+  border-radius: 20px;
+}
+@media (max-width: 520px) {
+  .informationBoard {
+    font-size: 12px;
+  }
+}
+
+.a {
+  color: #cdcdcd;
+}
+
+.button {
+  margin-bottom: 14px;
+}
+@media (max-width: 1255px) {
+  .button {
+    width: 100%;
+  }
+}
+
+.confirmText {
+  color: #9b9b9b;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+@media (max-width: 1255px) {
+  .confirmText {
+    font-size: 10px;
+  }
+}
+
+.guarantee {
+  padding: 20px;
+  border: 1px solid #484d4e;
+  border-radius: 30px;
+
+  font-family: Montserrat, sans-serif;
+}
+
+.informationBoardGuarantee {
+  margin-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #81fe95;
+  border-radius: 30px;
+  color: #81fe95;
+  font-size: 28px;
+  font-weight: 500;
+  max-width: 461px;
+  text-align: center;
+}
+
+.informationBoardGuaranteeText {
+  color: #dcdcdc;
+  font-weight: 400;
+}
+
+@media (max-width: 1255px) {
+  .informationBoardGuarantee {
+    font-size: 18px;
+  }
+  .informationBoardGuaranteeText {
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  .informationBoardGuarantee {
+    font-size: 16px;
+  }
+  .informationBoardGuaranteeText {
+    font-size: 13px;
+  }
+}
